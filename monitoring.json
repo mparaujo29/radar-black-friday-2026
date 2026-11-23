@@ -54,7 +54,8 @@
       "query": "Purificador de água Electrolux PE12G",
       "must": [
         "electrolux",
-        "pe12g"
+        "pe12g",
+        "purificador"
       ],
       "exclude": [
         "refil",
@@ -66,9 +67,15 @@
         "usado",
         "seminovo",
         "recondicionado",
-        "reembalado"
+        "reembalado",
+        "cartucho",
+        "adaptador",
+        "torneira",
+        "reservatorio",
+        "mangueira"
       ],
-      "enabled": true
+      "enabled": true,
+      "min_price": 250
     }
   ]
 }
