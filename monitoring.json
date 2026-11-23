@@ -1,0 +1,74 @@
+{
+  "monitored": [
+    {
+      "id": "seed-1",
+      "name": "Samsung Galaxy S26 Ultra",
+      "query": "Samsung Galaxy S26 Ultra 256GB smartphone",
+      "must": [
+        "s26",
+        "ultra"
+      ],
+      "exclude": [
+        "s25",
+        "s27",
+        "capa",
+        "capinha",
+        "pelicula",
+        "case",
+        "usado",
+        "seminovo",
+        "recondicionado",
+        "reembalado"
+      ],
+      "storage_gb": 256,
+      "enabled": true
+    },
+    {
+      "id": "seed-5",
+      "name": "iPhone 17",
+      "query": "Apple iPhone 17 256GB",
+      "must": [
+        "iphone",
+        "17"
+      ],
+      "exclude": [
+        "pro",
+        "max",
+        "plus",
+        "air",
+        "capa",
+        "capinha",
+        "pelicula",
+        "case",
+        "usado",
+        "seminovo",
+        "recondicionado",
+        "reembalado"
+      ],
+      "storage_gb": 256,
+      "enabled": true
+    },
+    {
+      "id": "seed-8",
+      "name": "Purificador Electrolux PE12G",
+      "query": "Purificador de água Electrolux PE12G",
+      "must": [
+        "electrolux",
+        "pe12g"
+      ],
+      "exclude": [
+        "refil",
+        "filtro",
+        "capa",
+        "peca",
+        "kit",
+        "reparo",
+        "usado",
+        "seminovo",
+        "recondicionado",
+        "reembalado"
+      ],
+      "enabled": true
+    }
+  ]
+}
