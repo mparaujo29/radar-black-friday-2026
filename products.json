@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": "seed-0",
+      "name": "PlayStation 5",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-1",
+      "name": "Samsung Galaxy S26 Ultra",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-2",
+      "name": "Samsung Galaxy Tab 10 SE",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-3",
+      "name": "Samsung Galaxy Tab 10 SE Plus",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-4",
+      "name": "Samsung Galaxy Tab 10 Lite 8 GB",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-5",
+      "name": "iPhone 17",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-6",
+      "name": "iPhone 17 Pro Max",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-7",
+      "name": "Samsung Galaxy Z Fold 8",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-8",
+      "name": "Purificador Electrolux PE12G",
+      "variant": "",
+      "target": null,
+      "url": ""
+    },
+    {
+      "id": "seed-9",
+      "name": "LG Dual Inverter 12.000 BTUs Frio 220V",
+      "variant": "",
+      "target": null,
+      "url": ""
+    }
+  ]
+}
