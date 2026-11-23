@@ -1,12 +1,12 @@
-# Configurar atualização automática a cada 3 horas
+# Configurar atualização automática às 08h e 20h
 
-O workflow `.github/workflows/atualizar-precos.yml` é executado pelo GitHub Actions em intervalos aproximados de três horas (UTC). O agendamento pode atrasar. Ele também pode ser acionado manualmente em **Actions > Atualizar preços - a cada 3 horas > Run workflow**.
+O workflow `.github/workflows/atualizar-precos.yml` é executado pelo GitHub Actions às 11h e 23h UTC (08h e 20h, horário de Brasília). O agendamento pode atrasar. Ele também pode ser acionado manualmente em **Actions > Atualizar preços - 08h e 20h > Run workflow**.
 
-**Atenção:** o workflow não pesquisa a internet nem extrai preços de lojas por conta própria. Ele importa dados de um endpoint HTTPS autorizado que retorne JSON. Sem `PRICE_FEED_URL`, o job termina sem alterar os preços. O ChatGPT não envia resultados para esse endpoint.
+**Atenção:** o workflow já inclui coleta gratuita pelo Google Shopping Brasil via SerpApi, desde que `SERPAPI_API_KEY` esteja em Actions secrets. A fonte opcional externa `PRICE_FEED_URL` continua suportada. Sem nenhuma fonte, o job não altera preços. O ChatGPT não envia resultados para esse endpoint.
 
 ## Configuração
 
-1. Contrate ou configure uma API/serviço autorizado que disponibilize cotações para os produtos cadastrados.
+1. Use a SerpApi gratuita com o segredo `SERPAPI_API_KEY` (recomendado para o piloto de três produtos) ou configure uma API adicional de preços autorizada.
 2. No repositório, abra **Settings > Secrets and variables > Actions > New repository secret**.
 3. Crie o segredo `PRICE_FEED_URL` com o endereço HTTPS completo do endpoint JSON.
 4. Se o serviço usar autenticação Bearer, crie também `PRICE_FEED_TOKEN`.
