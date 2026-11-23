@@ -21,6 +21,13 @@ class ScheduleTests(unittest.TestCase):
             with patch.object(should_run, "STATUS", p), patch.dict(os.environ, {"RUN_EVENT": "schedule"}):
                 self.assertFalse(should_run.should_run()[0])
 
+    def test_null_initial_status_runs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / "status.json"
+            p.write_text(json.dumps({"last_execution_at": None}))
+            with patch.object(should_run, "STATUS", p), patch.dict(os.environ, {"RUN_EVENT": "schedule"}):
+                self.assertTrue(should_run.should_run()[0])
+
     def test_manual_always_runs(self):
         with patch.dict(os.environ, {"RUN_EVENT": "workflow_dispatch"}):
             self.assertTrue(should_run.should_run()[0])
