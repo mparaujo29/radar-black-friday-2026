@@ -19,7 +19,7 @@ def should_run():
         if 0 <= age < 60 * 60:
             return False, "Já houve execução bem-sucedida na última hora; pulando reserva."
         return True, "Sem execução bem-sucedida na última hora."
-    except (OSError, KeyError, ValueError, TypeError):
+    except (OSError, KeyError, ValueError, TypeError, AttributeError):
         return True, "Status anterior ausente/inválido; verificando novamente."
 
 def main():
