@@ -23,19 +23,24 @@ def valid_https(value):
         return False
 
 def main():
+    local_feed = os.environ.get("PRICE_FEED_FILE", "").strip()
     url = os.environ.get("PRICE_FEED_URL", "").strip()
-    if not valid_https(url):
-        print("Fonte de preços não configurada. Defina PRICE_FEED_URL em Actions secrets. Nenhuma cotação alterada.")
+    if local_feed and (ROOT / local_feed).is_file():
+        data = read_json(ROOT / local_feed, {})
+        print("Importando feed temporário da SerpApi.")
+    elif valid_https(url):
+        headers = {"Accept": "application/json", "User-Agent": "RadarBlackFriday2026/1.0"}
+        token = os.environ.get("PRICE_FEED_TOKEN", "").strip()
+        if token:
+            headers["Authorization"] = "Bearer " + token
+        request = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(request, timeout=25) as response:
+            if response.status != 200:
+                raise RuntimeError(f"Fonte retornou HTTP {response.status}")
+            data = json.load(response)
+    else:
+        print("Nenhuma fonte configurada com novas cotações; histórico preservado.")
         return
-    headers = {"Accept": "application/json", "User-Agent": "RadarBlackFriday2026/1.0"}
-    token = os.environ.get("PRICE_FEED_TOKEN", "").strip()
-    if token:
-        headers["Authorization"] = "Bearer " + token
-    request = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(request, timeout=25) as response:
-        if response.status != 200:
-            raise RuntimeError(f"Fonte retornou HTTP {response.status}")
-        data = json.load(response)
     if not isinstance(data, dict) or not isinstance(data.get("quotes"), list):
         raise ValueError("Feed precisa conter um array quotes")
     ids = {p["id"] for p in read_json(PRODUCTS, {"products": []})["products"]}
@@ -75,7 +80,7 @@ def main():
     HISTORY.write_text(json.dumps({"quotes": all_quotes}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     PRICES.write_text(json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(),
                                   "quotes": all_quotes}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"{len(accepted)} novas cotações verificáveis registradas; total {len(all_quotes)}.")
+    print(f"{len(accepted)} novas cotações de preço registrado; total {len(all_quotes)}. Referências de desconto são validadas separadamente.")
 
 if __name__ == "__main__":
     try:
