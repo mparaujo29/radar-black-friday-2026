@@ -67,6 +67,11 @@ def candidate(item, spec):
             return None
     except (ValueError, TypeError, KeyError):
         return None
+    # Piso conservador de qualidade (não é referência de preço nem promoção):
+    # ofertas abaixo dele exigem revisão manual e não entram no gráfico.
+    min_price = spec.get("min_price")
+    if min_price is not None and amount < float(min_price):
+        return None
     source = str(item.get("source", "")).strip()
     link = item.get("link") or item.get("product_link")
     if not source or not valid_https(link):
