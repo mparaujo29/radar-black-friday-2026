@@ -58,7 +58,8 @@ def candidate(item, spec):
         return None
     if re.search(r"a partir de|por m[eê]s|parcela(s)?|mensal", norm(price_display)):
         return None
-    if str(item.get("second_hand_condition", "")).strip():
+    condition = norm(item.get("second_hand_condition", "")).strip()
+    if condition and condition not in ("new", "novo", "nova"):
         return None
     try:
         amount = float(item["extracted_price"])
