@@ -16,10 +16,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Coletar cotações brasileiras com SerpApi (se configurada)
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          SERPAPI_MONTHLY_BUDGET: '220'
+        run: python scripts/collect_serpapi.py
       - name: Consultar fonte autorizada e validar preços
         env:
           PRICE_FEED_URL: ${{ secrets.PRICE_FEED_URL }}
           PRICE_FEED_TOKEN: ${{ secrets.PRICE_FEED_TOKEN }}
+          PRICE_FEED_FILE: data/.serpapi-feed.json
         run: python scripts/update_prices.py
       - name: Publicar preços verificados, se houver alteração
         run: |
