@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T14:48:56.820737+00:00",
+  "generated_at": "2026-11-23T23:32:37.936376+00:00",
   "quotes": [
     {
       "id": "seed-1",
@@ -16,6 +16,14 @@
       "price": 5688,
       "store": "Magalu",
       "source_url": "https://www.google.com.br/search?ibp=oshop&q=Apple iPhone 17 256GB&prds=productid:13387172178379618159,headlineOfferDocid:13387172178379618159,imageDocid:428517154618829080,rds:PC_12606099557313791627|PROD_PC_12606099557313791627,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-8",
+      "name": "Purificador Electrolux PE12G",
+      "date": "2026-11-23T23:32:33.099093+00:00",
+      "price": 557.0,
+      "store": "Amazon.com.br - Retail",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Purificador de água Electrolux PE12G&prds=catalogid:2132363535591216342,productid:17834483170386298375,headlineOfferDocid:1700774021097713967,imageDocid:10654393668345146536,rds:PC_2745034463633874087|PROD_PC_2745034463633874087,gpcid:2745034463633874087,mid:576462850293254822,pvt:hg&hl=pt&gl=br&udm=28"
     }
   ],
   "revoked_quotes": [
