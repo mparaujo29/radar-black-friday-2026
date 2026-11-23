@@ -17,5 +17,13 @@
       "store": "Magalu",
       "source_url": "https://www.google.com.br/search?ibp=oshop&q=Apple iPhone 17 256GB&prds=productid:13387172178379618159,headlineOfferDocid:13387172178379618159,imageDocid:428517154618829080,rds:PC_12606099557313791627|PROD_PC_12606099557313791627,pvt:hg&hl=pt&gl=br&udm=28"
     }
+  ],
+  "revoked_quotes": [
+    {
+      "id": "seed-8",
+      "date": "2026-11-23T14:48:52.385716+00:00",
+      "store": "Mercado Livre",
+      "price": 116.3
+    }
   ]
 }
