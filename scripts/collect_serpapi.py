@@ -98,6 +98,7 @@ def main():
         raise RuntimeError("API de conta sem dados suficientes para controle de quota; coleta bloqueada.")
     budget = min(220, int(os.getenv("SERPAPI_MONTHLY_BUDGET", "220")))
     count = min(len(enabled), max(0, budget - usage), max(0, left))
+    print(f"SerpApi: {usage} buscas consumidas na conta; {left} créditos disponíveis; {count} buscas nesta execução; limite preventivo {budget}/mês.")
     if count == 0:
         print("Franquia gratuita/reserva mensal esgotada. Nenhuma pesquisa enviada.")
         return
