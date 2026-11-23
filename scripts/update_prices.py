@@ -78,8 +78,12 @@ def main():
     all_quotes = previous + accepted
     HISTORY.parent.mkdir(parents=True, exist_ok=True)
     HISTORY.write_text(json.dumps({"quotes": all_quotes}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    quarantine = read_json(ROOT / "data" / "quarantine.json", {"quotes": []})
+    revoked = [{"id": q["id"], "date": q["date"], "store": q["store"], "price": q["price"]}
+               for q in quarantine.get("quotes", []) if all(k in q for k in ("id", "date", "store", "price"))]
     PRICES.write_text(json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(),
-                                  "quotes": all_quotes}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                                  "quotes": all_quotes, "revoked_quotes": revoked},
+                                 ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(accepted)} novas cotações de preço registrado; total {len(all_quotes)}. Referências de desconto são validadas separadamente.")
 
 if __name__ == "__main__":
