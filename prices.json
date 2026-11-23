@@ -13,17 +13,9 @@
       "id": "seed-5",
       "name": "iPhone 17",
       "date": "2026-11-23T14:48:52.385716+00:00",
-      "price": 5688.0,
+      "price": 5688,
       "store": "Magalu",
       "source_url": "https://www.google.com.br/search?ibp=oshop&q=Apple iPhone 17 256GB&prds=productid:13387172178379618159,headlineOfferDocid:13387172178379618159,imageDocid:428517154618829080,rds:PC_12606099557313791627|PROD_PC_12606099557313791627,pvt:hg&hl=pt&gl=br&udm=28"
-    },
-    {
-      "id": "seed-8",
-      "name": "Purificador Electrolux PE12G",
-      "date": "2026-11-23T14:48:52.385716+00:00",
-      "price": 116.3,
-      "store": "Mercado Livre",
-      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Purificador de água Electrolux PE12G&prds=productid:11683350588361619829,headlineOfferDocid:11683350588361619829,imageDocid:11585128752265882237,pvt:hg&hl=pt&gl=br&udm=28"
     }
   ]
 }
