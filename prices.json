@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T12:14:17.469690+00:00",
+  "generated_at": "2026-11-24T23:40:46.409439+00:00",
   "quotes": [
     {
       "id": "seed-1",
@@ -40,6 +40,14 @@
       "price": 5699.0,
       "store": "Line Express Importados",
       "source_url": "https://www.google.com.br/search?ibp=oshop&q=Apple iPhone 17 256GB&prds=productid:4165363029642588959,headlineOfferDocid:4165363029642588959,imageDocid:7297126466762413140,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-1",
+      "name": "Samsung Galaxy S26 Ultra",
+      "date": "2026-11-24T23:40:42.334387+00:00",
+      "price": 7244.1,
+      "store": "CellularStore",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Samsung Galaxy S26 Ultra 256GB smartphone&prds=productid:15096405413886444827,headlineOfferDocid:15096405413886444827,imageDocid:6565275906943751083,rds:PC_16418233158843180078|PROD_PC_16418233158843180078,pvt:hg&hl=pt&gl=br&udm=28"
     }
   ],
   "revoked_quotes": [
