@@ -28,6 +28,11 @@ class ScheduleTests(unittest.TestCase):
             with patch.object(should_run, "STATUS", p), patch.dict(os.environ, {"RUN_EVENT": "schedule"}):
                 self.assertTrue(should_run.should_run()[0])
 
+    def test_after_black_friday_blocks_even_manual(self):
+        with patch.object(should_run, "is_after_black_friday", return_value=True):
+            with patch.dict(os.environ, {"RUN_EVENT": "workflow_dispatch"}):
+                self.assertFalse(should_run.should_run()[0])
+
     def test_manual_always_runs(self):
         with patch.dict(os.environ, {"RUN_EVENT": "workflow_dispatch"}):
             self.assertTrue(should_run.should_run()[0])

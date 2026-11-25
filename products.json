@@ -2,71 +2,71 @@
   "products": [
     {
       "id": "seed-0",
-      "name": "PlayStation 5",
-      "variant": "",
+      "name": "PlayStation 5 Slim com leitor",
+      "variant": "1 TB · mídia física · variante provisória",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-1",
       "name": "Samsung Galaxy S26 Ultra",
-      "variant": "",
+      "variant": "256 GB",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-2",
-      "name": "Samsung Galaxy Tab 10 SE",
-      "variant": "",
+      "name": "Samsung Galaxy Tab S10 FE",
+      "variant": "Wi-Fi · 128 GB · nome comercial corrigido",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-3",
-      "name": "Samsung Galaxy Tab 10 SE Plus",
-      "variant": "",
+      "name": "Samsung Galaxy Tab S10 FE+",
+      "variant": "Wi-Fi · 128 GB · nome comercial corrigido",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-4",
-      "name": "Samsung Galaxy Tab 10 Lite 8 GB",
-      "variant": "",
+      "name": "Samsung Galaxy Tab S10 Lite",
+      "variant": "Wi-Fi · 256 GB · 8 GB RAM · variante provisória",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-5",
       "name": "iPhone 17",
-      "variant": "",
+      "variant": "256 GB",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-6",
       "name": "iPhone 17 Pro Max",
-      "variant": "",
+      "variant": "256 GB · variante provisória",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-7",
       "name": "Samsung Galaxy Z Fold 8",
-      "variant": "",
+      "variant": "256 GB · variante provisória",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-8",
       "name": "Purificador Electrolux PE12G",
-      "variant": "",
+      "variant": "Aparelho completo",
       "target": null,
       "url": ""
     },
     {
       "id": "seed-9",
-      "name": "LG Dual Inverter 12.000 BTUs Frio 220V",
-      "variant": "",
+      "name": "LG Dual Inverter 12.000 BTUs Frio 220 V",
+      "variant": "S3-Q12JA31L · variante provisória",
       "target": null,
       "url": ""
     }
