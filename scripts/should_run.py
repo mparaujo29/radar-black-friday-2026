@@ -1,13 +1,20 @@
 """Evita consumir pesquisas duas vezes quando o agendamento de reserva dispara."""
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STATUS = ROOT / "status.json"
+END_LOCAL = date(2026, 11, 27)
+
+def is_after_black_friday():
+    return datetime.now(ZoneInfo("America/Sao_Paulo")).date() > END_LOCAL
 
 def should_run():
+    if is_after_black_friday():
+        return False, "Black Friday encerrada em 27/11/2026; nenhuma consulta permitida."
     if os.environ.get("RUN_EVENT") == "workflow_dispatch":
         return True, "Execução manual solicitada."
     if not STATUS.exists():
