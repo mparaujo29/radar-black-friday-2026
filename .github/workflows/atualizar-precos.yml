@@ -1,10 +1,11 @@
-name: Atualizar preços - manhã e noite (com reserva)
+name: Black Friday 10 produtos - até 27-11
 on:
   schedule:
     - cron: '17,47 11,23 * * *' # 08:17 / 08:47 e 20:17 / 20:47 America/Sao_Paulo; a segunda é reserva
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: atualizar-precos
   cancel-in-progress: false
@@ -16,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Evitar coleta repetida na janela de reserva
+      - name: Bloquear após 27/11 e evitar reserva duplicada
         id: gate
         env:
           RUN_EVENT: ${{ github.event_name }}
@@ -53,4 +54,14 @@ jobs:
             git push
           else
             echo "Nenhuma cotação nova; sem alterações."
+          fi
+      - name: Desativar agenda após a rodada noturna de 27/11
+        if: always() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DIA_LOCAL="$(TZ=America/Sao_Paulo date +%Y-%m-%d)"
+          HORA_LOCAL="$(TZ=America/Sao_Paulo date +%H%M)"
+          if [[ "$DIA_LOCAL" == "2026-11-27" && "$HORA_LOCAL" > "2040" ]] || [[ "$DIA_LOCAL" > "2026-11-27" ]]; then
+            gh workflow disable atualizar-precos.yml || echo "Desativação indisponível; bloqueio de data Python impede buscas futuras."
           fi
