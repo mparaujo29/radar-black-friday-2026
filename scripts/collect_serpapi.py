@@ -42,10 +42,22 @@ def matches(title, spec):
         return False
     if any(norm(token) in words for token in spec.get("exclude", [])):
         return False
+    if spec.get("require_regex") and not re.search(spec["require_regex"], title):
+        return False
+    if spec.get("any_regex") and not any(re.search(pattern, title) for pattern in spec["any_regex"]):
+        return False
+    if any(re.search(pattern, title) for pattern in spec.get("exclude_regex", [])):
+        return False
     storage = spec.get("storage_gb")
     if storage and not re.search(r"(?<![0-9])" + str(storage) + r"\s*(?:gb|g)(?![0-9])", title):
         return False
+    if spec.get("storage_pattern") and not re.search(spec["storage_pattern"], title):
+        return False
+    ram = spec.get("ram_gb")
+    if ram and not re.search(r"(?<![0-9])" + str(ram) + r"\s*(?:gb|g)\s*(?:de\s*)?ram\b", title):
+        return False
     return True
+
 
 def valid_https(url):
     p = urlparse(str(url))
