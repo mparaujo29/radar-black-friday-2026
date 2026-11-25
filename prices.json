@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T00:40:29.148870+00:00",
+  "generated_at": "2026-11-25T12:14:17.992142+00:00",
   "quotes": [
     {
       "id": "seed-1",
@@ -72,6 +72,70 @@
       "price": 2609.1,
       "store": "Americanas.com",
       "source_url": "https://www.google.com.br/search?ibp=oshop&q=LG S3-Q12JA31L Dual Inverter Voice 12000 frio 220V&prds=catalogid:17225065061365418858,productid:32693093800697467,headlineOfferDocid:3546324095720683052,imageDocid:4930751370610525042,rds:PC_3400184195670483387|PROD_PC_3400184195670483387,gpcid:7221529001832699965,mid:576462918712614914,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-0",
+      "name": "PlayStation 5 Slim com leitor (1 TB)",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 5015.0,
+      "store": "Worldwide Brasil Ltda",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Sony PlayStation 5 Slim 1TB com leitor disco&prds=productid:7823498472066966498,headlineOfferDocid:7823498472066966498,imageDocid:6183233248026283332,rds:PC_10464915926174910073|PROD_PC_10464915926174910073,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-1",
+      "name": "Samsung Galaxy S26 Ultra 256 GB",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 7244.1,
+      "store": "CellularStore",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Samsung Galaxy S26 Ultra 256GB smartphone&prds=productid:15096405413886444827,headlineOfferDocid:15096405413886444827,imageDocid:6565275906943751083,rds:PC_16418233158843180078|PROD_PC_16418233158843180078,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-3",
+      "name": "Samsung Galaxy Tab S10 FE+ Wi-Fi 128 GB",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 3286.05,
+      "store": "KaBuM!",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Samsung Galaxy Tab S10 FE Plus WiFi 128GB&prds=catalogid:211026500955620425,productid:16281215687850477880,headlineOfferDocid:11107032503651809627,imageDocid:14673726534564071443,rds:PC_1978475512487798519|PROD_PC_1978475512487798519,gpcid:1978475512487798519,mid:576462915359137144,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-4",
+      "name": "Samsung Galaxy Tab S10 Lite Wi-Fi 256 GB / 8 GB RAM",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 3000.39,
+      "store": "Mercado Livre",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Samsung Galaxy Tab S10 Lite 256GB 8GB RAM WiFi&prds=productid:14938244522270976641,headlineOfferDocid:14938244522270976641,imageDocid:9087893809208333207,rds:PC_8413418747032738773|PROD_PC_8413418747032738773,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-5",
+      "name": "Apple iPhone 17 256 GB",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 5699.0,
+      "store": "Line Express Importados",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Apple iPhone 17 256GB&prds=productid:9327901833998497575,headlineOfferDocid:9327901833998497575,imageDocid:2580836367283390807,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-6",
+      "name": "Apple iPhone 17 Pro Max 256 GB",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 6798.34,
+      "store": "LG Importados",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Apple iPhone 17 Pro Max 256GB&prds=productid:11149376789172855180,headlineOfferDocid:11149376789172855180,imageDocid:18037955275992549647,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-7",
+      "name": "Samsung Galaxy Z Fold 8 256 GB",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 11924.99,
+      "store": "Magalu",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Samsung Galaxy Z Fold 8 256GB&prds=productid:688297469264786553,headlineOfferDocid:688297469264786553,imageDocid:7044383529136014977,rds:PC_6984457949198771688|PROD_PC_6984457949198771688,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-8",
+      "name": "Purificador Electrolux PE12G",
+      "date": "2026-11-25T12:14:02.414106+00:00",
+      "price": 580.09,
+      "store": "shopee.com.br",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Purificador de água Electrolux PE12G&prds=productid:2102836309635635891,headlineOfferDocid:2102836309635635891,imageDocid:1674143404773786355,pvt:hg&hl=pt&gl=br&udm=28"
     }
   ],
   "revoked_quotes": [
