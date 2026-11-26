@@ -175,6 +175,30 @@
       "price": 2470.91,
       "store": "Casa & Video",
       "source_url": "https://www.google.com.br/search?ibp=oshop&q=LG S3-Q12JA31L Dual Inverter Voice 12000 frio 220V&prds=catalogid:1947112616661997204,productid:1705936483754883629,headlineOfferDocid:6238902055398816237,imageDocid:9564764239520968332,rds:PC_1335143918622809954|PROD_PC_1335143918622809954,gpcid:1335143918622809954,mid:576462576251034906,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-2",
+      "name": "Samsung Galaxy Tab S10 FE Wi-Fi 128 GB",
+      "date": "2026-11-26T12:12:44.936625+00:00",
+      "price": 2591.99,
+      "store": "Amazon.com.br - Retail",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Samsung Galaxy Tab S10 FE WiFi 128GB&prds=catalogid:12792143035397670101,productid:16014579512529640332,headlineOfferDocid:5636201086819145548,imageDocid:10352484059356971886,rds:PC_1107813667509172319|PROD_PC_1107813667509172319,gpcid:1107813667509172319,mid:576462576359985966,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-7",
+      "name": "Samsung Galaxy Z Fold 8 256 GB",
+      "date": "2026-11-26T12:12:44.936625+00:00",
+      "price": 11117.83,
+      "store": "Biostech Conecta",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=Samsung Galaxy Z Fold 8 256GB&prds=productid:18167506630655420476,headlineOfferDocid:18167506630655420476,imageDocid:8655995215456583284,rds:PC_13404808615165717252|PROD_PC_13404808615165717252,pvt:hg&hl=pt&gl=br&udm=28"
+    },
+    {
+      "id": "seed-9",
+      "name": "LG Dual Inverter AI Voice Frio 12.000 BTUs 220 V (S3-Q12JA31L)",
+      "date": "2026-11-26T12:12:44.936625+00:00",
+      "price": 2779.2,
+      "store": "Catral",
+      "source_url": "https://www.google.com.br/search?ibp=oshop&q=LG S3-Q12JA31L Dual Inverter Voice 12000 frio 220V&prds=catalogid:1947112616661997204,productid:1705936483754883629,headlineOfferDocid:13376957731235750912,imageDocid:7101050054770706994,rds:PC_1335143918622809954|PROD_PC_1335143918622809954,gpcid:1335143918622809954,mid:576462576251034906,pvt:hg&hl=pt&gl=br&udm=28"
     }
   ]
 }
