@@ -1,8 +1,8 @@
 {
-  "last_execution_at": "2026-11-27T12:07:46.291437+00:00",
+  "last_execution_at": "2026-11-28T00:00:03.384562+00:00",
   "workflow": "Atualizar preços - manhã e noite",
   "result": "rotina concluída; não implica que todas as lojas tiveram preço disponível",
   "price_source_configured": true,
-  "total_price_records": 37,
-  "last_quote_at": "2026-11-27T12:07:04.537366+00:00"
+  "total_price_records": 43,
+  "last_quote_at": "2026-11-27T23:59:45.626029+00:00"
 }
